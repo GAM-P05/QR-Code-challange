@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Outfit';
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    flex-direction: column-reverse;
+
+    background: hsl(212, 45%, 89%);
+}
+
+.container {
+    position: relative;
+    width: 17em;
+    height: 26em;
+
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    border-radius: 20px;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 10px 25px 0px hsl(212, 45%, 80%);
+
+    overflow: hidden;   
+}
+
+.box {
+    position: absoulte;
+    inset: 2;
+    flex-direction: column;
+    padding: 15px 15px 0px 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    line-height: 1.25;
+
+}
+
+.box .text {
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    
+}
+
+.box h2 {
+    letter-spacing: 0.5px;
+    
+    font-weight: 700;
+    font-size: large;
+
+    color: hsl(218, 44%, 22%);
+}
+
+.box p {
+    padding: 15px 0px 10px 0px;
+
+    font-weight: 400;
+    font-size: 13px;
+
+    line-height: 1.25;
+
+
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media all and (max-width: 600px){
+    
+    .container {
+        width: 20em;
+        height: 31em;
+
+        margin-top: 4em;
+        margin-bottom: 4em;
+
+        overflow: hidden;
+    }
+
+    .box h2 {
+        padding: 5px 10px 10px 10px;
+        text-align: center;
+
+        line-height: 1.25;
+
+        font-size: 1.35em;
+    }
+
+    .box p {
+        padding: 5px 5px 0px 5px;
+        text-align: center;
+
+        line-height: 1.25;
+        
+        font-size: 15px;
+    }
+
+}
+
+
